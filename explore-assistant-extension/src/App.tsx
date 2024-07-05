@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { hot } from 'react-hot-loader/root'
-import { Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import {
   setExploreId,
@@ -31,9 +31,6 @@ const ExploreApp = () => {
         <Switch>
           <Route path="/index" exact>
               <AgentPage />
-          </Route>
-          <Route>
-            <Redirect to="/index" />
           </Route>
         </Switch>
     </>
