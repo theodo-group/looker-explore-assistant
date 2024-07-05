@@ -7,17 +7,17 @@ const SamplePrompts = () => {
   const categorizedPrompts = [
     {
       category: 'Cohorting',
-      prompt: 'Count of Users by first purchase date',
+      prompt: 'Count of deals won grouped by companies name in the last 30 days in table format'
     },
     {
       category: 'Audience Building',
       prompt:
-        'Users who have purchased more than 100 dollars worth of Calvin Klein products and have purchased in the last 30 days',
+        'List of Companies that has a won deal with an amount greater than 100 000 in the last 30 days, in table format. Without the dealnames, count the deals and sum the amount.',
     },
     {
       category: 'Period Comparison',
       prompt:
-        'Total revenue by category this year compared to last year in a line chart with year pivoted',
+        'Total amount won by company industry this year compared to last year in a bar chart pivoted',
     },
   ]
 
