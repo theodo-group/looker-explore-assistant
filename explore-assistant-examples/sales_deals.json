@@ -1,0 +1,74 @@
+[
+    {
+        "input": "What are the names of the deals that were lost or in the Lead KO stage, and which companies were involved?",
+        "output": "fields=offers.offer_title,deal_owners.owner_name,deals.deal_name,companies.name,deals.partner,deals.stage_name,deals.hot_mild,deals.cloud_provider_of_the_project,offers_to_deals.offer_amount_in_euro,deals.close_date,deals.days_lead_time&f[deals.is_won]=No&f[deals.stage_name]=-Lead KO,-Lost&f[offers.offer_title]=Sicara - Data ESG&sorts=deals.close_date desc&limit=500&column_limit=50&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "What are the names of the offers, owners, deals, companies, and deal owners for deals won by Hokla and Theodo FR in the past week, along with the offer amount in euros?",
+        "output": "fields=offers.offer_title,offers.owner,deals.deal_name,deals_to_companies.list_of_companies,deal_owners.owner_name,offers_to_deals.offer_amount_in_euro&f[deals.is_won]=Yes&f[offers.is_wbr]=Yes&f[deals.startup]=Hokla,Theodo FR&f[deals.close_date]=1 week ago for 1 week&f[companies.name]=&sorts=deals_to_companies.list_of_companies desc 0&limit=500&column_limit=50&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "What are the names of the companies, deals, and deal owners, along with the lead time, new business status, total amount, contact list, list of offers, and client category, for deals in stage Column B, for startups Theodo FR and Hokla, excluding Bpifrance, sorted by total amount in descending order, with a limit of 500 results?",
+        "output": "fields=companies.name,deals.deal_name,deal_owners.owner_name,deals.days_lead_time,deals_to_companies.is_new_business,deals.total_amount,contacts.contact_list,offers_to_deals.list_of_offers,companies.client_category&f[deals.stage_name]=Column B&f[deals.startup]=Theodo FR,Hokla&f[companies.client_category]=&f[companies.name]=-Bpifrance&sorts=deals.total_amount desc&limit=500&column_limit=50&total=on&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "Which deals were lost or in the Lead KO stage that included the Sicara - Data ESG offer?",
+        "output": "fields=offers.offer_title,deal_owners.owner_name,deals.deal_name,companies.name,deals.partner,deals.stage_name,deals.hot_mild,deals.cloud_provider_of_the_project,offers_to_deals.offer_amount_in_euro,deals.close_date,deals.days_lead_time&f[deals.is_won]=No&f[deals.stage_name]=-Lead KO,-Lost&f[offers.offer_title]=Sicara - Data ESG&sorts=deals.close_date desc&limit=500&column_limit=50&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "What are the names of the companies, deals, and deal owners, along with the lead time, new business status, total amount, contact list, list of offers, and client category, for deals in stage Column B, for startups Theodo FR and Hokla, excluding Bpifrance, sorted by total amount descending, with a limit of 500 results?",
+        "output": "fields=companies.name,deals.deal_name,deal_owners.owner_name,deals.days_lead_time,deals_to_companies.is_new_business,deals.total_amount,contacts.contact_list,offers_to_deals.list_of_offers,companies.client_category&f[deals.stage_name]=Column B&f[deals.startup]=Theodo FR,Hokla&f[companies.client_category]=&f[companies.name]=-Bpifrance&sorts=deals.total_amount desc&limit=500&column_limit=50&total=on&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "What were the top 5 deals lost last week by Padok, broken down by client category?",
+        "output": "fields=companies.name,deals.deal_name,deal_owners.owner_name,deals.days_lead_time,deals_to_companies.is_new_business,deals.total_amount,contacts.contact_list,offers_to_deals.list_of_offers,companies.client_category&f[deals.close_date]=last week&f[deals.stage_name]=Lost&f[deals.startup]=Padok&f[companies.client_category]=&sorts=deals.total_amount desc&limit=500&column_limit=50&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "What are the names of the deals that were lost or in the Lead KO stage, and what was the offer amount for Sicara - Data ESG?",
+        "output": "fields=offers.offer_title,deal_owners.owner_name,deals.deal_name,companies.name,deals.partner,deals.stage_name,deals.hot_mild,deals.cloud_provider_of_the_project,offers_to_deals.offer_amount_in_euro,deals.close_date,deals.days_lead_time&f[deals.is_won]=No&f[deals.stage_name]=-Lead KO,-Lost&f[offers.offer_title]=Sicara - Data ESG&sorts=deals.close_date desc&limit=500&column_limit=50&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "What deals were won by Hokla or Theodo FR in the past week, and what offers were associated with those deals?",
+        "output": "fields=offers.offer_title,offers.owner,deals.deal_name,deals_to_companies.list_of_companies,deal_owners.owner_name,offers_to_deals.offer_amount_in_euro&f[deals.is_won]=Yes&f[offers.is_wbr]=Yes&f[deals.startup]=Hokla,Theodo FR&f[deals.close_date]=1 week ago for 1 week&f[companies.name]=&sorts=deals_to_companies.list_of_companies desc 0&limit=500&column_limit=50&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "What are the top 500 deals by total amount for Theodo FR and Hokla startups, excluding Bpifrance, categorized by client category?",
+        "output": "fields=companies.name,deals.deal_name,deal_owners.owner_name,deals.days_lead_time,deals_to_companies.is_new_business,deals.total_amount,contacts.contact_list,offers_to_deals.list_of_offers,companies.client_category&f[deals.stage_name]=Column B&f[deals.startup]=Theodo FR,Hokla&f[companies.client_category]=&f[companies.name]=-Bpifrance&sorts=deals.total_amount desc&limit=500&column_limit=50&total=on&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "Which deals did not include the \"Sicara - Data ESG\" offer, were not won, and are not in the Lead KO or Lost stage?",
+        "output": "fields=offers.offer_title,deal_owners.owner_name,deals.deal_name,companies.name,deals.partner,deals.stage_name,deals.hot_mild,deals.cloud_provider_of_the_project,offers_to_deals.offer_amount_in_euro,deals.close_date,deals.days_lead_time&f[deals.is_won]=No&f[deals.stage_name]=-Lead KO,-Lost&f[offers.offer_title]=Sicara - Data ESG&sorts=deals.close_date desc&limit=500&column_limit=50&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "What are the names of the deals that were lost or in the Lead KO stage, and what was the offer amount in euros for the Sicara - Data ESG offer?",
+        "output": "fields=offers.offer_title,deal_owners.owner_name,deals.deal_name,companies.name,deals.partner,deals.stage_name,deals.hot_mild,deals.cloud_provider_of_the_project,offers_to_deals.offer_amount_in_euro,deals.close_date,deals.days_lead_time&f[deals.is_won]=No&f[deals.stage_name]=-Lead KO,-Lost&f[offers.offer_title]=Sicara - Data ESG&sorts=deals.close_date desc&limit=500&column_limit=50&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "What are the names of the deals that were not won, are not in the Lead KO or Lost stages, and are associated with the Sicara - Data ESG offer?",
+        "output": "fields=offers.offer_title,deal_owners.owner_name,deals.deal_name,companies.name,deals.partner,deals.stage_name,deals.hot_mild,deals.cloud_provider_of_the_project,offers_to_deals.offer_amount_in_euro,deals.close_date,deals.days_lead_time&f[deals.is_won]=No&f[deals.stage_name]=-Lead KO,-Lost&f[offers.offer_title]=Sicara - Data ESG&sorts=deals.close_date desc&limit=500&column_limit=50&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "What deals were won by Hokla or Theodo FR in the last week, and what offers were associated with those deals?",
+        "output": "fields=offers.offer_title,offers.owner,deals.deal_name,deals_to_companies.list_of_companies,deal_owners.owner_name,offers_to_deals.offer_amount_in_euro&f[deals.is_won]=Yes&f[offers.is_wbr]=Yes&f[deals.startup]=Hokla,Theodo FR&f[deals.close_date]=1 week ago for 1 week&f[companies.name]=&sorts=deals_to_companies.list_of_companies desc 0&limit=500&column_limit=50&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "What are the top 500 deals by total amount for Theodo FR and Hokla startups that are not Bpifrance, sorted by total amount descending, and including the company name, deal name, owner name, days lead time, new business flag, total amount, contact list, list of offers, and client category?",
+        "output": "fields=companies.name,deals.deal_name,deal_owners.owner_name,deals.days_lead_time,deals_to_companies.is_new_business,deals.total_amount,contacts.contact_list,offers_to_deals.list_of_offers,companies.client_category&f[deals.stage_name]=Column B&f[deals.startup]=Theodo FR,Hokla&f[companies.client_category]=&f[companies.name]=-Bpifrance&sorts=deals.total_amount desc&limit=500&column_limit=50&total=on&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "What are the names of the offers, owners, and deals that were won by Hokla and Theodo FR in the past week, along with the list of companies involved and the offer amount in euros?",
+        "output": "fields=offers.offer_title,offers.owner,deals.deal_name,deals_to_companies.list_of_companies,deal_owners.owner_name,offers_to_deals.offer_amount_in_euro&f[deals.is_won]=Yes&f[offers.is_wbr]=Yes&f[deals.startup]=Hokla,Theodo FR&f[deals.close_date]=1 week ago for 1 week&f[companies.name]=&sorts=deals_to_companies.list_of_companies desc 0&limit=500&column_limit=50&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "What are the names of the offers, owners, deals, companies, and deal owners for deals won by Hokla and Theodo FR in the past week, along with the offer amount in euros?",
+        "output": "fields=offers.offer_title,offers.owner,deals.deal_name,deals_to_companies.list_of_companies,deal_owners.owner_name,offers_to_deals.offer_amount_in_euro&f[deals.is_won]=Yes&f[offers.is_wbr]=Yes&f[deals.startup]=Hokla,Theodo FR&f[deals.close_date]=1 week ago for 1 week&f[companies.name]=&sorts=deals_to_companies.list_of_companies desc 0&limit=500&column_limit=50&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "What deals were won by Thedo FR in the past week, and what offers were associated with those deals?",
+        "output": "fields=offers.offer_title,offers.owner,deals.deal_name,deal_owners.owner_name,offers_to_deals.offer_amount_in_euro,contacts.contact_list,deals_to_companies.list_of_companies&f[deals.is_won]=Yes&f[offers.is_wbr]=Yes&f[deals.startup]=%Theodo FR%&f[deals.close_date]=1 week ago for 1 week&f[companies.name]=&sorts=deals_to_companies.list_of_companies desc&limit=500&column_limit=50&vis={\"type\":\"looker_grid\"}"
+    },
+    {
+        "input": "What are the names of the deals that were won by Hokla or Theodo FR in the past week, and who are the owners of those deals?",
+        "output": "fields=offers.offer_title,offers.owner,deals.deal_name,deals_to_companies.list_of_companies,deal_owners.owner_name,offers_to_deals.offer_amount_in_euro&f[deals.is_won]=Yes&f[offers.is_wbr]=Yes&f[deals.startup]=Hokla,Theodo FR&f[deals.close_date]=1 week ago for 1 week&f[companies.name]=&sorts=deals_to_companies.list_of_companies desc 0&limit=500&column_limit=50&vis={\"type\":\"looker_grid\"}"
+    }
+]

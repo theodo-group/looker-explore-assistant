@@ -1,0 +1,135 @@
+
+  Dimensions Used to group by information:
+ name: companies.client_category, type: string, description: Client type 
+name: deals_to_companies.company_id, type: number, description: Company id 
+name: companies.company_id, type: number, description: Company id 
+name: companies.company_owner_id, type: number, description: Company owner id 
+name: deals_to_companies.deal_id, type: number, description: Deal id 
+name: companies.industry, type: string, description: Industry of the company in hubspot 
+name: companies.is_high_value_client, type: yesno, description:  
+name: companies.is_hvc_or_ka, type: yesno, description:  
+name: companies.is_key_account, type: yesno, description:  
+name: deals_to_companies.is_new_business, type: yesno, description:  
+name: companies.is_significant_logo, type: yesno, description: True if the company is one of the bigest french companies 
+name: companies.is_significant_or_target_logo, type: yesno, description:  
+name: companies.is_target_logo, type: yesno, description: True if the company is prospected 
+name: companies.name, type: string, description: Company name 
+name: companies.parent_company_id, type: number, description: Parent company id 
+name: deals_to_companies.previous_win_date, type: date_date, description: Previous win date 
+name: deals_to_companies.previous_win_month, type: date_month, description: Previous win date 
+name: deals_to_companies.previous_win_quarter, type: date_quarter, description: Previous win date 
+name: deals_to_companies.previous_win_raw, type: date_raw, description: Previous win date 
+name: deals_to_companies.previous_win_week, type: date_week, description: Previous win date 
+name: deals_to_companies.previous_win_year, type: date_year, description: Previous win date 
+name: companies.target_logo_type, type: string, description:  
+name: company_owners.active_user_id, type: number, description:  
+name: company_owners.current_startup, type: string, description: Current startup of the owner 
+name: company_owners.email, type: string, description: Owner's email 
+name: company_owners.employee_id, type: string, description: Unique id of the employee 
+name: company_owners.first_name, type: string, description: Owner first name 
+name: company_owners.last_name, type: string, description: Owner last name 
+name: company_owners.owner_id, type: number, description: Hubspot owner ID 
+name: company_owners.owner_name, type: string, description: Full name of the owner 
+name: contacts.company_id, type: number, description: Hubspot id of the company of the contact 
+name: deals_to_contacts.contact_id, type: number, description: Hubspot id of the contact 
+name: contacts.contact_id, type: number, description: Hubspot id of the contact 
+name: contacts.contact_name, type: string, description: Full name of the contact 
+name: contacts.contact_name_with_job_title, type: string, description:  
+name: deals_to_contacts.deal_id, type: number, description: Hubspot id of the deal 
+name: contacts.email, type: string, description: Email address of the contact 
+name: contacts.first_name, type: string, description: First name of the contact 
+name: contacts.job_title, type: string, description: Job title in Hubspot 
+name: contacts.last_name, type: string, description: Last name of the contact 
+name: contacts.lifecycle_stage, type: string, description: Lifecycle stage of the contact. Possible values : 'Ancien Client', NULL 
+name: contacts.owner_id, type: number, description: Hubspot id of the owner of the contact 
+name: deal_owners.active_user_id, type: number, description:  
+name: deal_owners.current_startup, type: string, description: Current startup of the owner 
+name: deal_owners.email, type: string, description: Owner's email 
+name: deal_owners.employee_id, type: string, description: Unique id of the employee 
+name: deal_owners.first_name, type: string, description: Owner first name 
+name: deal_owners.last_name, type: string, description: Owner last name 
+name: deal_owners.owner_id, type: number, description: Hubspot owner ID 
+name: deal_owners.owner_name, type: string, description: Full name of the owner 
+name: deals.amount, type: number, description: Amount in local currency 
+name: deals.close_date, type: date_date, description: Close date 
+name: deals.close_month, type: date_month, description: Close date 
+name: deals.close_quarter, type: date_quarter, description: Close date 
+name: deals.close_raw, type: date_raw, description: Close date 
+name: deals.close_week, type: date_week, description: Close date 
+name: deals.close_year, type: date_year, description: Close date 
+name: deals.closed_lost_reason, type: string, description: Explanation of why the deal was lost 
+name: deals.closed_won_reason, type: string, description: Explanation of why the deal was won 
+name: deals.cloud_provider_of_the_project, type: string, description: Cloud provider/Infra of the project 
+name: deals.creation_date, type: date_date, description: Creation date 
+name: deals.creation_month, type: date_month, description: Creation date 
+name: deals.creation_quarter, type: date_quarter, description: Creation date 
+name: deals.creation_raw, type: date_raw, description: Creation date 
+name: deals.creation_week, type: date_week, description: Creation date 
+name: deals.creation_year, type: date_year, description: Creation date 
+name: deals.days_lead_time, type: duration_day, description:  
+name: deals.deal_id, type: number, description: Hubspot deal ID 
+name: deals.deal_name, type: string, description: Name of the deal 
+name: deals.hot_mild, type: string, description: 'hot' (active) : action last week / 'mild' (on hold) : no action last week 
+name: deals.ingeniosity_markers, type: string, description: Ingeniosity markers 
+name: deals.is_closed, type: yesno, description:  
+name: deals.is_lost, type: yesno, description:  
+name: deals.is_proposal_sent, type: yesno, description:  
+name: deals.is_won, type: yesno, description:  
+name: deals.owner_id, type: number, description:  
+name: deals.partner, type: string, description:  
+name: deals.proposal_is_ingenious, type: yesno, description: Is the proposal ingenious ? 
+name: deals.proposal_sent_date, type: date_date, description: Proposal sent date 
+name: deals.proposal_sent_day_of_week, type: date_day_of_week, description: Proposal sent date 
+name: deals.proposal_sent_month, type: date_month, description: Proposal sent date 
+name: deals.proposal_sent_quarter, type: date_quarter, description: Proposal sent date 
+name: deals.proposal_sent_raw, type: date_raw, description: Proposal sent date 
+name: deals.proposal_sent_week, type: date_week, description: Proposal sent date 
+name: deals.proposal_sent_week_of_year, type: date_week_of_year, description: Proposal sent date 
+name: deals.proposal_sent_year, type: date_year, description: Proposal sent date 
+name: deals.source, type: string, description: Source of the deal 
+name: deals.stage_name, type: string, description:  
+name: deals.startup, type: string, description:  
+name: deals.win_probability, type: number, description:  
+name: offers_to_deals.deal_id, type: number, description:  
+name: offers.is_archived, type: yesno, description:  
+name: offers.is_wbr, type: yesno, description:  
+name: offers_to_deals.offer_amount_in_euro, type: number, description:  
+name: offers_to_deals.offer_amount_in_local_currency, type: number, description:  
+name: offers.offer_description, type: string, description:  
+name: offers_to_deals.offer_id, type: number, description:  
+name: offers.offer_id, type: number, description:  
+name: offers.offer_id_deal_id, type: string, description:  
+name: offers_to_deals.offer_number_on_deal, type: number, description:  
+name: offers.offer_title, type: string, description:  
+name: offers.owner, type: string, description:  
+name: offers.owner_email, type: string, description:  
+name: offers_to_deals.product_id, type: number, description:  
+name: offers.product_id, type: number, description:  
+name: offers.thought_leader, type: string, description:  
+name: offers.thought_leader_email, type: string, description:  
+name: offers.url, type: string, description:  
+
+  Measures are used to perform calculations/aggregations (if top, bottom, total, sum, etc. are used include a measure):
+ name: deals_to_companies.count, type: count, description:  
+name: companies.count, type: count_distinct, description: Total number of companies 
+name: deals_to_companies.list_of_companies, type: list, description:  
+name: companies.list_of_companies, type: list, description:  
+name: company_owners.count, type: count_distinct, description: Total number of owners 
+name: contacts.contact_list, type: list, description:  
+name: deals_to_contacts.count, type: count, description:  
+name: contacts.count, type: count_distinct, description: Total number of contacts 
+name: contacts.min_contact_id, type: min, description:  
+name: deal_owners.count, type: count_distinct, description: Total number of owners 
+name: deals.average_win_ratio, type: average, description:  
+name: deals.count, type: count, description: Number of deals 
+name: deals.count_proposal_sent, type: count, description:  
+name: deals.last_close_date, type: date, description:  
+name: deals.total_amount, type: sum, description: Total amount in local currency 
+name: deals.total_won, type: sum, description: Total amount of won deals in local currency 
+name: offers_to_deals.count, type: count, description:  
+name: offers.count, type: count_distinct, description:  
+name: offers_to_deals.list_of_offers, type: list, description:  
+name: offers.offer_amount_with_offer_name, type: string, description:  
+name: offers.total_won_in_euro, type: sum_distinct, description:  
+
+  

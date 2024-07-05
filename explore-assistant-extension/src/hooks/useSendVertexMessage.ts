@@ -145,8 +145,8 @@ const useSendVertexMessage = () => {
 
 ${exploreRefinementExamples
   .map((item) => {
-    const inputText = '"' + item.input.join('", "') + '"'
-    return `- The sequence of prompts from the user: ${inputText}. The summarized prompts: "${item.output}"`
+    const inputText = '"' + item.input + '"'
+    return `- The prompt from the user: ${inputText}. The summarized prompt: "${item.output}"`
   })
   .join('\n')}
 
