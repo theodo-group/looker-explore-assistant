@@ -50,7 +50,7 @@ resource "google_secret_manager_secret_version" "vertex_cf_auth_token_version" {
 resource "google_secret_manager_secret_iam_binding" "vertex_cf_auth_token_accessor" {
   secret_id = google_secret_manager_secret.vertex_cf_auth_token.secret_id
   role      = "roles/secretmanager.secretAccessor"
-  members   = [
+  members = [
     "serviceAccount:${google_service_account.explore-assistant-sa.email}",
   ]
 }
@@ -109,10 +109,10 @@ resource "google_cloudfunctions2_function" "default" {
 
   service_config {
     max_instance_count               = 10
-    min_instance_count               = 1
-    available_memory                 = "4Gi"
+    min_instance_count               = 0
+    available_memory                 = "512Mi"
     timeout_seconds                  = 60
-    available_cpu                    = "4"
+    available_cpu                    = "2"
     max_instance_request_concurrency = 20
     environment_variables = {
       REGION  = var.deployment_region
@@ -120,10 +120,10 @@ resource "google_cloudfunctions2_function" "default" {
     }
 
     secret_environment_variables {
-      key     = "VERTEX_CF_AUTH_TOKEN"
+      key        = "VERTEX_CF_AUTH_TOKEN"
       project_id = var.project_id
-      secret  = google_secret_manager_secret.vertex_cf_auth_token.secret_id
-      version = "latest"
+      secret     = google_secret_manager_secret.vertex_cf_auth_token.secret_id
+      version    = "latest"
     }
 
     all_traffic_on_latest_revision = true

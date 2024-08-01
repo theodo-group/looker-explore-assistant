@@ -31,10 +31,7 @@ declare module '*.module.css' {
 }
 
 // For SCSS modules - assuming you are using SCSS syntax for these files
-declare module '*.module.scss' {
-  const classes: Record<string, string>
-  export default classes
-}
+declare module '*.module.scss'
 
 // For regular CSS files, if you are importing them directly and want type support
 declare module '*.css' {

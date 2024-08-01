@@ -48,8 +48,7 @@ SOFTWARE.
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "skipLibCheck": true,
-    "suppressImplicitAnyIndexErrors": true
+    "skipLibCheck": true
   },
   "exclude": [
     "explore-assistant-extension/node_modules",
