@@ -29,7 +29,7 @@ const ExploreApp = () => {
   return (
     <>
         <Switch>
-          <Route path="/index" exact>
+          <Route path="/" exact>
               <AgentPage />
           </Route>
         </Switch>
